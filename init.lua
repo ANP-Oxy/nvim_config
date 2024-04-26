@@ -1,0 +1,7 @@
+require "config.options"
+require "config.lazy"
+require "config.theme"
+require "config.cmp-config"
+require "config.lsp-config"
+require "config.treesitter_config"
+require "config.quarto"

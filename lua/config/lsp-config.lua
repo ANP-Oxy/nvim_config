@@ -30,6 +30,6 @@ require'lspconfig'.lua_ls.setup {
 }
 
 
-require'lspconfig'.pylsp.setup {
+require'lspconfig'.pyright.setup {
   capabilities = capabilities,
 }

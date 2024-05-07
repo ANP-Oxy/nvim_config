@@ -1,6 +1,5 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
   dependencies = {
     "windwp/nvim-ts-autotag",
@@ -22,25 +21,15 @@ return {
       },
       -- ensure these language parsers are installed
       ensure_installed = {
-        "json",
-        "javascript",
-        "typescript",
-        "tsx",
-        "yaml",
-        "html",
         "css",
-        "prisma",
         "markdown",
         "markdown_inline",
-        "svelte",
-        "graphql",
-        "bash",
         "lua",
+        "yaml",
         "vim",
-        "dockerfile",
         "gitignore",
-        "query",
         "vimdoc",
+        "python",
         "c",
       },
       incremental_selection = {

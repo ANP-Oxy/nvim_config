@@ -4,6 +4,7 @@ return {
   dependencies = {
     "hrsh7th/cmp-buffer", -- source for text in buffer
     "hrsh7th/cmp-path", -- source for file system paths
+    "hrsh7th/cmp-nvim-lsp-signature-help",
     {
       "L3MON4D3/LuaSnip",
       -- follow latest release.
@@ -34,6 +35,10 @@ return {
           luasnip.lsp_expand(args.body)
         end,
       },
+    window = {
+       completion = cmp.config.window.bordered(),
+       documentation = cmp.config.window.bordered(),
+    },
       mapping = cmp.mapping.preset.insert({
         ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
         ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
@@ -50,6 +55,7 @@ return {
         { name = "luasnip" }, -- snippets
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
+        { name = "nvim_lsp_signature_help"},
       }),
 
       -- configure lspkind for vs-code like pictograms in completion menu

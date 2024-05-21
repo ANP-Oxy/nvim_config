@@ -60,6 +60,19 @@ return {
                 capabilities = capabilities
             })
     end,
+
+    ["marksman"] = function()
+        lspconfig["marksman"].setup({
+                capabilities = capabilities,
+                filetype = {'markdown', 'quarto'},
+                })
+    end,
+
+    ["sqlls"] = function()
+            lspconfig["sqlls"].setup({
+                    capabilities = capabilities
+                })
+    end,
 })
 end,
 }

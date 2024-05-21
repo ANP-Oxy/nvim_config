@@ -31,7 +31,7 @@ return {
     dev = false,
     opts = {
       lspFeatures = {
-        languages = { 'r', 'python', 'julia', 'bash', 'lua', 'html', 'dot', 'javascript', 'typescript', 'ojs' },
+        languages = { 'r',  'julia', 'sql', 'bash', 'lua', 'html', 'dot', 'javascript', 'typescript', 'ojs' },
       },
       codeRunner = {
         enabled = true,
